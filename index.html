@@ -35,8 +35,7 @@
 </head>
 
 <body id="page-top">
-    <div id="load"></div>
-    <cst id="content">
+  
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -339,11 +338,11 @@ You can drop me a line about coding, weather, life and universe whenever you wis
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Oh, before you leave ... </h2>
-                <a href="http://my-works.comlu.com/#page1" target="_blank" class="btn btn-default btn-xl wow tada">Check out my other site</a>
+                <a href="https://github.com/unrealityxi/" target="_blank" class="btn btn-default btn-xl wow tada">Check out my github</a>
             </div>
         </div>
     </aside>
-    <cst>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -357,25 +356,6 @@ You can drop me a line about coding, weather, life and universe whenever you wis
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
-    <script>    
-        document.onreadystatechange = function () {
-            var state = document.readyState
-            if (state == 'interactive') {
-                document.getElementById('content').style.visibility="hidden";
-            } else if (state == 'complete') {
-
-                setTimeout(function(){
-
-                    var content = document.getElementById('content');
-
-                    document.getElementById('load').style.visibility="hidden";
-                    content.style.visibility = "visible";
-                    content.style.transition = "opacity 1s linear";
-                    content.style.opacity = 1;
-                },1000);
-            }
-        }
-    </script>
 
 
 
