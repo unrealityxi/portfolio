@@ -519,3 +519,27 @@ body {
 #content {
     opacity: 0;
 }
+
+#scroll-home {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 0 0 4px 0 #222;
+    background-color: white;
+    text-shadow: 0 0 1px #000;
+    font-size: 25px;
+}
+
+#scroll-home:active {
+    bottom: 19px;
+}
+
+#scroll-home > span {
+    position: relative;
+    top: 2px;
+    left: -1px;
+}
