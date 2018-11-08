@@ -6,7 +6,6 @@
 
 (function($) {
     "use strict"; // Start of use strict
-
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
@@ -42,7 +41,21 @@
         }
     })
 
+    // Toggle visibility of home button on inappropriate heights
+
+    $(document).scroll(()=>{
+        console.log($(document).scrollTop());
+        if ($(document).scrollTop() > 50){
+            $("#scroll-home").show();
+            $("#scroll-home").addClass("animated bounceIn");
+        } else {
+            $("#scroll-home").hide();
+        }
+    });
+
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
+
+    
 
 })(jQuery); // End of use strict
