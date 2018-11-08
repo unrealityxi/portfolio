@@ -553,3 +553,18 @@ body {
 .slanted { 
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 } 
+
+#portfolio {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 2;
+}
