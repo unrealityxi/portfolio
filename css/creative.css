@@ -534,6 +534,7 @@ body {
     font-size: 25px;
     display: none;
     animation-duration: 1s;
+    z-index: 2;
 }
 
 #scroll-home:active {
@@ -561,17 +562,17 @@ body {
 canvas {
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 .container-fluid {
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 /* enable GPU support */
 
-canvas {
+header, section {
     -webkit-backface-visibility: hidden;
    -moz-backface-visibility: hidden;
    -ms-backface-visibility: hidden;
