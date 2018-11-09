@@ -13,18 +13,18 @@
           "number": {
             "value": 20,
             "density": {
-              "enable": false,
+              "enable": true,
               "value_area": 800
             }
           },
           "color": {
-            "value": "#666666"
+            "value": "#4B0082"
           },
           "shape": {
-            "type": "circle",
+            "type": "polygon",
             "stroke": {
               "width": 0,
-              "color": "#666666"
+              "color": "#4B0082"
             },
             "polygon": {
               "nb_sides": 5
@@ -57,14 +57,14 @@
           },
           "line_linked": {
             "enable": true,
-            "distance": 3000,
-            "color": "#333333",
+            "distance": 400,
+            "color": "#4B0082",
             "opacity": 0.5,
             "width": 1
           },
           "move": {
             "enable": true,
-            "speed": 3,
+            "speed": 5,
             "direction": "none",
             "random": true,
             "straight": false,
