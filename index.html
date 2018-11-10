@@ -36,6 +36,7 @@
 
 <body id="page-top">
   
+    <!-- navbar -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -76,18 +77,21 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-
+    <!-- end navbar -->
+    <!-- hero -->
     <header>
         <div class="header-content" >
             <div class="header-content-inner">
-                <h1>unreal designs</h1>
+                <h1 class="hero-heading">unreal designs</h1>
                 <hr class="light">
                 <p>&diams; Making the Web interesting &diams;</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
     </header>
+    <!-- end hero -->
 
+    <!-- about -->
     <section class="bg-primary slanted" id="about">
         <div class="container">
           <p style = "padding: 6%"></p>
@@ -104,30 +108,34 @@
             </div>
         </div>
     </section>
-
+    <!-- end about -->
 
 
     
     
-
+    <!-- PORTFOLIO -->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p style="padding: 50px"></p>
-                    <h1 class="section-heading">Things i've built</h1>
-                    <p style="padding: 20px"></p>
+            <!-- header and fullstack title -->
+            <div id="header-fullstack" class="row relative">
+                <div class="col-lg-12 text-center"><br>
+                    <p style="padding: 50px"></p><br>
+                    <h1 class="section-heading">Things i've built</h1><br>
+                    <p style="padding: 20px"></p><br>
                     <div id="fbend">
                         <a href="#fullstack" class="btn btn-primary btn-xl page-scroll">Full stack</a>
                         <a href="#backend" class="btn btn-primary btn-xl page-scroll">Back End</a>
                         <a href="#frontend" class="btn btn-primary btn-xl page-scroll">Front End</a>
-                    </div>
-                  <p style="padding: 10px"></p>
+                    </div><br>
+                  <p style="padding: 20px"></p><br>
                     <hr class="primary">
+                    <h2 id="fullstack" class="text-center" >Full stack</h2><br>
+                    <p style="padding: 20px"></p><br>
                 </div>
             </div>
-        <h2 id="fullstack" class="text-center" >Full stack</h2>
-        <p style="padding: 20px"></p>
+            
+        <!-- END header and fullstack title -->
+        <!-- fullstack images begin -->
         <div class="row no-gutter">
 
          <div class="col-lg-4 col-sm-6">
@@ -181,11 +189,17 @@
             </div>
 
         </div>
+        <!-- END fullstack portfolio images -->
 
-
-        <h2 id="backend" class="text-center" >Back End</h2>
-            <p style="padding: 20px"></p>
-
+        <!-- backend heading -->
+        <div id="backend-title-wraper"  class="relative">
+                <div class="backend-title-content">
+                    <h2 id="backend" class="text-center" >Back End</h2>
+                    <p style="padding: 20px"></p>
+                </div>
+        </div>
+        <!-- END backend heading -->
+        <!-- backend projects -->
             <div id="backend-projects" class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="https://forecast.glitch.me/" class="portfolio-box" target="_blank">
@@ -237,11 +251,14 @@
                     </a>
                 </div>
             </div>
+        <!-- END backend projects -->
 
-
-            <h2 id="frontend" class="text-center" >Front End</h2>
-            <p style="padding: 20px"></p>
-
+            <div id="frontend-title-wrapper" class="relative">
+                    <h2 id="frontend" class="text-center" >Front End</h2>
+                    <p style="padding: 20px"></p>
+            </div>
+            
+            <!-- frontend projects -->
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
                     <a href="https://unrealityxi.github.io/drumMachine/" target="_blank" class="portfolio-box">
@@ -354,7 +371,7 @@
                     </a>
                 </div>
 
-                <div class="col-lg-4 col-sm-6">
+                <!-- <div class="col-lg-4 col-sm-6">
                     <a href="http://codepen.io/unrealityxi/full/RRLPAj/" target="_blank" class="portfolio-box">
                         <img src="img/portfolio/9.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
@@ -368,7 +385,7 @@
                             </div>
                         </div>
                     </a>
-                </div>
+                </div> -->
                 
 
               <div class="col-lg-4 col-sm-6">
@@ -406,39 +423,49 @@
                 
                 
             </div>
-
-
-            
-
-
+            <!-- END frontend projects -->
         </div>
     </section>
-
+    <!-- end PORTFOLIO -->
     
+    <!-- contact -->
+    <section class='no-padding'>
+        <div  id="contact" class="container">
+            <div class="row contact-content-wrapper">
+                <div class="contact-content">
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Wanna get in touch with me? Drop me a line via email or linkedin, and i will reply as soon as possible. Promise!</p>
-                </div>
-                <div class="col-lg-2 col-lg-offset-2 text-center">
-                    <i class="fa fa-linkedin-square text-primary fa-3x wow bounceIn"></i>
-                    <p><a href="https://rs.linkedin.com/in/dragan-roganovi%C4%87-074500118">LinkedIn</a></p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-github text-primary fa-3x wow bounceIn"></i>
-                    <p><a href="https://github.com/unrealityxi">GitHub</a></p>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <i class="fa fa-envelope-o fa-3x wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:dragan.roganovic88@gmail.com">Email</a></p>
+                    <div class='text-center'>
+                        <div class="row text-center">
+                                <div>
+                                        <h2 class="section-heading">Let's Get In Touch!</h2>
+                                        <hr class="primary">
+                                        <p>Wanna get in touch with me? Drop me a line via email or linkedin, and i will reply as soon as possible. Promise!</p>
+                                    </div>
+                        </div>
+                        <div class="row contact-icons text-center">
+                            
+                                    <div class="contact-link-icon">
+                                        <i class="fa fa-linkedin-square text-primary fa-3x wow bounceIn"></i>
+                                        <p><a href="https://rs.linkedin.com/in/dragan-roganovi%C4%87-074500118">LinkedIn</a></p>
+                                    </div>
+                               
+                                        <div class="contact-link-icon">
+                                            <i class="fa fa-github text-primary fa-3x wow bounceIn"></i>
+                                            <p><a href="https://github.com/unrealityxi">GitHub</a></p>
+                                        </div>
+                                        <div class="contact-link-icon">
+                                            <i class="fa fa-envelope-o fa-3x wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                            <p><a href="mailto:dragan.roganovic88@gmail.com">Email</a></p>
+                                        </div>
+                        </div>      
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
+    <!-- end contact -->
+
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">

@@ -8,117 +8,121 @@
     "use strict"; // Start of use strict
     //loads particles.js
 
-    particlesJS('portfolio', {
-        "particles": {
-          "number": {
-            "value": 20,
-            "density": {
-              "enable": true,
-              "value_area": 800
-            }
-          },
-          "color": {
-            "value": "#4B0082"
-          },
-          "shape": {
-            "type": "polygon",
-            "stroke": {
-              "width": 0,
-              "color": "#4B0082"
-            },
-            "polygon": {
-              "nb_sides": 5
-            },
-            "image": {
-              "src": "img/github.svg",
-              "width": 100,
-              "height": 100
-            }
-          },
-          "opacity": {
-            "value": 0.8,
-            "random": false,
-            "anim": {
-              "enable": false,
-              "speed": 0.7,
-              "opacity_min": 0.1,
-              "sync": false
-            }
-          },
-          "size": {
-            "value": 5,
-            "random": true,
-            "anim": {
-              "enable": true,
-              "speed": 10,
-              "size_min": 0.1,
-              "sync": false
-            }
-          },
-          "line_linked": {
+    let particlesCfg = {
+      "particles": {
+        "number": {
+          "value": 20,
+          "density": {
             "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#4B0082"
+        },
+        "shape": {
+          "type": "polygon",
+          "stroke": {
+            "width": 0,
+            "color": "#4B0082"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.8,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 0.7,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 5,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 10,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 400,
+          "color": "#4B0082",
+          "opacity": 0.5,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 5,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "bounce",
+          "bounce": true,
+          // "attract": {
+          //   "enable": false,
+          //   "rotateX": 600,
+          //   "rotateY": 1200
+          // }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 300,
+            "line_linked": {
+              "opacity": 0.7485830392471388
+            }
+          },
+          "bubble": {
             "distance": 400,
-            "color": "#4B0082",
-            "opacity": 0.5,
-            "width": 1
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
           },
-          "move": {
-            "enable": true,
-            "speed": 5,
-            "direction": "none",
-            "random": true,
-            "straight": false,
-            "out_mode": "bounce",
-            "bounce": true,
-            // "attract": {
-            //   "enable": false,
-            //   "rotateX": 600,
-            //   "rotateY": 1200
-            // }
-          }
-        },
-        "interactivity": {
-          "detect_on": "canvas",
-          "events": {
-            "onhover": {
-              "enable": true,
-              "mode": "grab"
-            },
-            "onclick": {
-              "enable": false,
-              "mode": "push"
-            },
-            "resize": false
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
           },
-          "modes": {
-            "grab": {
-              "distance": 300,
-              "line_linked": {
-                "opacity": 0.7485830392471388
-              }
-            },
-            "bubble": {
-              "distance": 400,
-              "size": 40,
-              "duration": 2,
-              "opacity": 8,
-              "speed": 3
-            },
-            "repulse": {
-              "distance": 200,
-              "duration": 0.4
-            },
-            "push": {
-              "particles_nb": 4
-            },
-            "remove": {
-              "particles_nb": 2
-            }
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
           }
-        },
-        "retina_detect": true
-      });
-      
+        }
+      },
+      "retina_detect": true
+    }
+
+    particlesJS('header-fullstack', particlesCfg);
+    particlesJS('backend-title-wraper', particlesCfg);
+    particlesJS('frontend-title-wrapper', particlesCfg);
+    particlesJS('contact', particlesCfg);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -141,7 +145,7 @@
     });
 
     // Fit Text Plugin for Main Header
-    $("h1").fitText(
+    $(".hero-heading").fitText(
         1.2, {
             minFontSize: '35px',
             maxFontSize: '65px'
@@ -159,7 +163,7 @@
 
     $(document).scroll(()=>{
         console.log($(document).scrollTop());
-        if ($(document).scrollTop() > 50){
+        if ($(document).scrollTop() > 100){
             $("#scroll-home").show();
             $("#scroll-home").addClass("animated bounceIn");
         } else {
