@@ -78,7 +78,7 @@
         }
       },
       "interactivity": {
-        "detect_on": "canvas",
+        "detect_on": "window",
         "events": {
           "onhover": {
             "enable": true,
@@ -119,10 +119,11 @@
       "retina_detect": true
     }
 
-    particlesJS('header-fullstack', particlesCfg);
-    particlesJS('backend-title-wraper', particlesCfg);
-    particlesJS('frontend-title-wrapper', particlesCfg);
-    particlesJS('contact', particlesCfg);
+    particlesJS('page-top', particlesCfg);
+    // particlesJS('header-fullstack', particlesCfg);
+    // particlesJS('backend-title-wraper', particlesCfg);
+    // particlesJS('frontend-title-wrapper', particlesCfg);
+    // particlesJS('contact', particlesCfg);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
