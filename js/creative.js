@@ -46,7 +46,7 @@
           }
         },
         "size": {
-          "value": 5,
+          "value": 3,
           "random": true,
           "anim": {
             "enable": true,
@@ -57,14 +57,14 @@
         },
         "line_linked": {
           "enable": true,
-          "distance": 400,
+          "distance": 300,
           "color": "#4B0082",
           "opacity": 0.5,
           "width": 1
         },
         "move": {
           "enable": true,
-          "speed": 5,
+          "speed": 2,
           "direction": "none",
           "random": true,
           "straight": false,
@@ -120,10 +120,6 @@
     }
 
     particlesJS('page-top', particlesCfg);
-    // particlesJS('header-fullstack', particlesCfg);
-    // particlesJS('backend-title-wraper', particlesCfg);
-    // particlesJS('frontend-title-wrapper', particlesCfg);
-    // particlesJS('contact', particlesCfg);
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
