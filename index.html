@@ -71,9 +71,9 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a class="page-scroll" href="#about">About</a></li>
             <li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
-            <li><a class="page-scroll" href="#fullstack">Full stack</a></li>
-            <li><a class="page-scroll" href="#backend">Back end</a></li>
             <li><a class="page-scroll" href="#frontend">Front end</a></li>
+            <li><a class="page-scroll" href="#backend">Back end</a></li>
+            <li><a class="page-scroll" href="#fullstack">Full stack</a></li>
             <li><a class="page-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -110,7 +110,7 @@
               My name is Dragan and i am a web developer. I am working on both
               sides of the stack, building user interface and back end in
               whatever is handy at the time, but i mostly end up using MongoDB,
-              Express, Node, React, Jquery, Foundation or Bootstrap. When i'm
+              Express, Node, Angular, TypeScript and Bootstrap. When i'm
               not bussy coding, you will find me playing guitar, bicycling
               somewhere in nature or generaly pondering nature of life, universe
               and everything. Feel free to drop me a line or two, and i will
@@ -140,111 +140,258 @@
             <p style="padding: 20px"></p>
             <br />
             <div id="fbend">
-              <a href="#fullstack" class="btn btn-primary btn-xl page-scroll"
-                >Full stack</a
+                <a href="#frontend" class="btn btn-primary btn-xl page-scroll"
+                >Front End</a
               >
               <a href="#backend" class="btn btn-primary btn-xl page-scroll"
                 >Back End</a
               >
-              <a href="#frontend" class="btn btn-primary btn-xl page-scroll"
-                >Front End</a
+              <a href="#fullstack" class="btn btn-primary btn-xl page-scroll"
+                >Full stack</a
               >
+              
             </div>
             <br />
             <p style="padding: 20px"></p>
             <br />
             <hr class="primary" />
-            <h2 id="fullstack" class="text-center">Full stack</h2>
+            
             <br />
+          </div>
+        </div>
+        <!-- END chooser -->
+
+        <!-- frontend projects -->
+        <div id="frontend-title-wrapper" class="relative">
+            <h2 id="frontend" class="text-center">Front End</h2>
             <p style="padding: 20px"></p>
-            <br />
-          </div>
-        </div>
-        <!-- END header and fullstack title -->
-
-        <!-- fullstack projects -->
-        <div id="fullstack-projects" class="row no-gutter">
-          <div class="col-lg-4 col-sm-6" title=''>
-            <a
-              href="https://timers.glitch.me/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/timers.jpg"
-                class="img-responsive"
-                alt=""
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    MongoDB Express React Node Foundation
-                  </div>
-                  <div class="project-name">
-                    Collection of timers built with React, juggling between
-                    bunch of states.
-                  </div>
-                </div>
-              </div>
-            </a>
           </div>
 
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://techinterview.glitch.me/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/interview-app.jpg"
-                class="img-responsive"
-                alt=""
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    MongoDB Express EJS Node
+        
+        <div id="frontend-projects" class="row no-gutter">
+
+            <!-- sematell ReplyControl -->
+            <div class="col-lg-4 col-sm-6">
+                <a
+                  href="https://www.sematell.com/reply-one/response-intelligence/customer-service-software/omni-channel/multi-channel/spracherkennung/themenerkennung/routing-software/reply-control/"
+                  target="_blank"
+                  class="portfolio-box"
+                >
+                  <img
+                    src="img/portfolio/reply-control.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                  <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                      <div class="project-category text-faded">
+                        Angular 7 &diams; typescript &diams; scss &diams; amCharts &diams; igniteUi 
+                      </div>
+                      <hr class="light" />
+                      <div class="project-name">
+                        Statistics data monitoring application 
+                        for response control in large call centers
+                      </div>
+                    </div>
                   </div>
-                  <div class="project-name">
-                    Displays random technical question for user selected
-                    programming language. Stores and retrieves html data in
-                    MongoDb and dynamically generates permanent hyperlinks for
-                    each question/page.
+                </a>
+            </div>
+            <!-- END sematell ReplyControl   -->
+  
+            <!-- drum machine -->
+            <div class="col-lg-4 col-sm-6">
+                <a
+                  href="https://unrealityxi.github.io/drumMachine/"
+                  target="_blank"
+                  class="portfolio-box"
+                >
+                  <img
+                    src="img/portfolio/drum-machine.jpg"
+                    class="img-responsive"
+                    alt=""
+                  />
+                  <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                      <div class="project-category text-faded">
+                        JavaScript &diams; html5 &diams; css3
+                      </div>
+                      <hr class="light" />
+                      <div class="project-name">
+                        Drum machine with animated background and buttons.
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- END drum machine -->
+
+            <!-- flight radar -->
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/AirTrafficMap/dist/index.html"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/flight-radar.png"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      OpenLayers &diams; jQuery &diams; JS bootstrap &diams; css3
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Shows aircrafts and their basic info
+                      in the vicinity of the user.
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://dr-chat.glitch.me/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/chat-app.jpg"
-                class="img-responsive"
-                alt=""
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Course project <br />
-                    Node Express SocketIO Mustache Javascript
-                  </div>
-                  <div class="project-name">
-                    Real time multiuser, multiroom web chat application.
+            <!-- END flight radar -->
+  
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/Calculator/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img src="img/portfolio/calc.jpg" class="img-responsive" alt="" />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      JavaScript &diams; html5 &diams; css3
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Calculator with dynamic background
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/wikiInstantSearch/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/10.jpg"
+                  class="img-responsive"
+                  alt="wikiSearch"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      AJAX &diams; jQuery &diams; Bootstrap &diams; JavaScript &diams; html5 &diams; css3
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Wikipedia instant search. Calls wikipedia API with user
+                      defined query, returns and displays results
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/pomodoroClock/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/clock.jpg"
+                  class="img-responsive"
+                  alt="wikiSearch"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      JQuery &diams; JavaScript &diams; html5 &diams; css3
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Adjustable exercise timer. Alternates user defined intervals
+                      for break, and rest and displays apropriate visual cues.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="img/portfolio/3-full.jpg"
+                class="portfolio-box"
+                target="_blank"
+              >
+                <img src="img/portfolio/3.jpg" class="img-responsive" alt="" />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">Ryndsor</div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      A page of a best selling, fictional book.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/Battlegrounds/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/11.jpg"
+                  class="img-responsive"
+                  alt="Bgrounds"
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">Battlegrounds</div>
+                    <hr class="light" />
+                    <div class="project-name">Army battle simulator</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+  
+  
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://unrealityxi.github.io/quoteGenerator/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img src="img/portfolio/8.jpg" class="img-responsive" alt="" />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      Random Quote Machine
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">Displays random quote</div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- END fullstack projects -->
+          <!-- END frontend projects -->
+
+          
 
         <!-- backend heading -->
         <div id="backend-title-wraper" class="relative">
           <div class="backend-title-content">
+            <p style="padding: 20px"></p>
             <h2 id="backend" class="text-center">Back End</h2>
             <p style="padding: 20px"></p>
           </div>
@@ -266,8 +413,9 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Ejs Node Express Bootstrap javascript
+                    Ejs &diams; Node &diams; Express &diams; Bootstrap &diams; javascript
                   </div>
+                  <hr class="light" />
                   <div class="project-name">
                     Looks up clients ip address or takes in address specified,
                     finds their geographical coordinates then finds weather data
@@ -291,8 +439,9 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Ejs Node Express MongoDB Mongoose Bootstrap
+                    Ejs &diams; Node &diams; Express &diams; MongoDB &diams; Mongoose &diams; Bootstrap
                   </div>
+                  <hr class="light" />
                   <div class="project-name">
                     Url shortener similar to bit.ly. Verifies url, creates
                     apropriate scheme, shortens it and stores it in database.
@@ -318,8 +467,9 @@
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
                   <div class="project-category text-faded">
-                    Express Node Bootstrap html5 css3 moment.js
+                    Express &diams; Node &diams; Bootstrap &diams; html5 &diams; css3 &diams; moment.js
                   </div>
+                  <hr class="light" />
                   <div class="project-name">
                     Sends current time as a JSON response.
                   </div>
@@ -330,262 +480,95 @@
         </div>
         <!-- END backend projects -->
 
-        <div id="frontend-title-wrapper" class="relative">
-          <h2 id="frontend" class="text-center">Front End</h2>
-          <p style="padding: 20px"></p>
+        <!-- fullstack title wrapper -->
+        <div id="fullstack-title-wraper" class="relative">
+            <p style="padding: 20px"></p>
+            <h2 id="fullstack" class="text-center">Full stack</h2>
+            <p style="padding: 20px"></p>
         </div>
-
-        <!-- frontend projects -->
-        <div id="frontend-projects" class="row no-gutter">
-
-          <!-- sematell ReplyControl -->
-          <div class="col-lg-4 col-sm-6">
+        <!-- END fullstack title wrapper -->
+        <!-- fullstack projects -->
+        <div id="fullstack-projects" class="row no-gutter">
+            <div class="col-lg-4 col-sm-6" title=''>
               <a
-                href="https://www.sematell.com/reply-one/response-intelligence/customer-service-software/omni-channel/multi-channel/spracherkennung/themenerkennung/routing-software/reply-control/"
+                href="https://timers.glitch.me/"
                 target="_blank"
                 class="portfolio-box"
               >
                 <img
-                  src="img/portfolio/reply-control.jpg"
+                  src="img/portfolio/timers.jpg"
                   class="img-responsive"
                   alt=""
                 />
                 <div class="portfolio-box-caption">
                   <div class="portfolio-box-caption-content">
                     <div class="project-category text-faded">
-                      Angular 7 typescript scss amCharts igniteUi 
+                      MongoDB &diams; Express &diams; React &diams; Node &diams; Foundation
                     </div>
+                    <hr class="light" />
                     <div class="project-name">
-                      Statistics data monitoring application 
-                      for response control in large call centers
+                      Collection of timers built with React, juggling between
+                      bunch of states.
                     </div>
                   </div>
                 </div>
               </a>
-          </div>
-          <!-- END sematell ReplyControl   -->
-
-          <!-- drum machine -->
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/drumMachine/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/drum-machine.jpg"
-                class="img-responsive"
-                alt=""
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    JavaScript html5 css3
-                  </div>
-                  <div class="project-name">
-                    Drum machine with animated background and buttons.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- END drum machine -->
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/Calculator/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img src="img/portfolio/calc.jpg" class="img-responsive" alt="" />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    JavaScript html5 css3
-                  </div>
-                  <div class="project-name">
-                    Calculator with dynamic background
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/wikiInstantSearch/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/10.jpg"
-                class="img-responsive"
-                alt="wikiSearch"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    AJAX jQuery Bootstrap JavaScript html5 css3
-                  </div>
-                  <div class="project-name">
-                    Wikipedia instant search. Calls wikipedia API with user
-                    defined query, returns and displays results
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/pomodoroClock/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/clock.jpg"
-                class="img-responsive"
-                alt="wikiSearch"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    JQuery JavaScript html5 css3
-                  </div>
-                  <div class="project-name">
-                    Adjustable exercise timer. Alternates user defined intervals
-                    for break, and rest and displays apropriate visual cues.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="http://www.my-works.byethost32.com/"
-              class="portfolio-box"
-              target="_blank"
-            >
-              <img
-                src="img/portfolio/4.jpg"
-                class="img-responsive"
-                alt="conFusion"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Bootstrap css3 html5 JavaScript jQuery
-                  </div>
-                  <div class="project-name">Landing page for a restaurant.</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="img/portfolio/3-full.jpg"
-              class="portfolio-box"
-              target="_blank"
-            >
-              <img src="img/portfolio/3.jpg" class="img-responsive" alt="" />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">Ryndsor</div>
-                  <div class="project-name">
-                    A page of a best selling, fictional book.
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/Battlegrounds/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img
-                src="img/portfolio/11.jpg"
-                class="img-responsive"
-                alt="Bgrounds"
-              />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">Battlegrounds</div>
-                  <div class="project-name">Army battle simulator</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <!--
-            <div class="col-lg-4 col-sm-6">
-                <a href="http://codepen.io/unrealityxi/full/RRLPAj/" target="_blank" class="portfolio-box">
-
-                    <img src="img/portfolio/9.jpg" class="img-responsive" alt="">
-
-                    <div class="portfolio-box-caption">
-
-                        <div class="portfolio-box-caption-content">
-
-                            <div class="project-category text-faded">
-
-                                Weather app
-
-                            </div>
-
-                            <div class="project-name">
-
-                                Displays current weather
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </a>
-
             </div>
-          -->
-
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="https://unrealityxi.github.io/quoteGenerator/"
-              target="_blank"
-              class="portfolio-box"
-            >
-              <img src="img/portfolio/8.jpg" class="img-responsive" alt="" />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Random Quote Machine
-                  </div>
-                  <div class="project-name">Displays random quote</div>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <a
-              href="img/portfolio/2-full.jpg"
-              class="portfolio-box"
-              target="_blank"
-            >
-              <img src="img/portfolio/2.jpg" class="img-responsive" alt="" />
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">Keycorps</div>
-                  <div class="project-name">
-                    Company dealing with security on the web.
+  
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://techinterview.glitch.me/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/interview-app.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      MongoDB &diams; Express &diams; EJS &diams; Node
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Displays random technical question for user selected
+                      programming language. Stores and retrieves html data in
+                      MongoDb and dynamically generates permanent hyperlinks for
+                      each question/page.
+                    </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <a
+                href="https://dr-chat.glitch.me/"
+                target="_blank"
+                class="portfolio-box"
+              >
+                <img
+                  src="img/portfolio/chat-app.jpg"
+                  class="img-responsive"
+                  alt=""
+                />
+                <div class="portfolio-box-caption">
+                  <div class="portfolio-box-caption-content">
+                    <div class="project-category text-faded">
+                      Course project <br />
+                      Node &diams; Express &diams; SocketIO &diams; Mustache &diams; Javascript
+                    </div>
+                    <hr class="light" />
+                    <div class="project-name">
+                      Real time multiuser, multiroom web chat application.
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- END frontend projects -->
+          <!-- END fullstack projects -->
       </div>
     </section>
     <!-- end PORTFOLIO -->
@@ -609,7 +592,7 @@
               <div class="row contact-icons text-center">
                 <div class="contact-link-icon">
                   <a
-                    href="https://rs.linkedin.com/in/dragan-roganovi%C4%87-074500118"
+                    href="https://www.linkedin.com/in/dragan-roganović"
                     target="_blank">
                     <i
                       class="fa fa-linkedin-square text-primary fa-3x wow bounceIn"
@@ -647,10 +630,10 @@
         <div class="call-to-action">
           <h2>Oh, before you leave ...</h2>
           <a
-            href="https://github.com/unrealityxi/"
+            href="https://unrealityxi.github.io/cv/"
             target="_blank"
             class="btn btn-default btn-xl wow tada"
-            >Check out my github</a
+            >Check out my work biography</a
           >
         </div>
       </div>
