@@ -721,3 +721,8 @@ canvas {
   position: relative;
   top: 1px;
 }
+
+.maybe-dragons {
+  font-size: 0.65em;
+  top: -8px;
+}
